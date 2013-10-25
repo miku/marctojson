@@ -1,0 +1,6 @@
+851c5de39858953b8830be0e93c6fd081fa1ac5b  src/test/resources/423_records.mrc
+0372de786251d0a1885733c462c589e9ec5dd4d6  src/test/resources/5_lines.txt
+10cc391e3995b272aab15edf18730fcec7780275  src/test/resources/broken.encoding.json
+c31b32b70d3df0ac41e664f06eb7940584bad548  src/test/resources/loc.natlib.consortium.hvd_001400145.marc.mrc
+697d6d816eab79c66bd102c81c9d12eae95c227a  src/test/resources/vanilla.json
+9d003e3ae301bb035082d6a548803cd282fde46e  src/test/resources/vanilla.mrc

@@ -1,0 +1,16 @@
+{"content":{"260":[{"b":"Heinrichshofen","c":"1854","a":"Magdeburg","ind2":" ","ind1":" "}],"300":[{"a":"1 score (15 p.) ; 25 x 33 cm.","ind2":" ","ind1":" "}],"852":[{"a":"Loeb Music","ind2":" ","ind1":" "},{"a" 
+:"Networked Resource","ind2":" ","ind1":" "}],"008":"880216s        gw ||||| ||||||||||||||||","240":[{"p":"Sinfonia","a":"Gott soll allein mein Herze haben","ind2":"0","ind1":"1"}],"856":[{"u":"http://nrs.harvar
+d.edu/urn-3:fhcl.loeb:3274489","ind2":" ","ind1":" "},{"3":"Bibliographic record","u":"http://vc.lib.harvard.edu/vc/deliver/~scores/001400145","ind2":" ","ind1":" "}],"005":"20091117113726.0","650":[{"a":"Cantata
+s, Sacred","ind2":" ","ind1":"1","x":"Scores"},{"a":"Instrumental music","ind2":" ","ind1":"1"}],"001":"001400145","003":"HOLLIS","440":[{"a":"LDI 10: Digital scores from the Loeb Music Library III","ind2":" ","i
+nd1":" "}],"700":[{"d":"1811-1885","a":"Ritter, August Gottfried","ind2":" ","ind1":"1"}],"leader":{"raw":"01141ncm  2200253uu 4500","subfieldcodelength":2,"status":"n","length":1141,"indicatorcount":2,"entrymap" 
+:"4500","type":"c","impldef2":"uu ","impldef1":"m ","codingschema":" "},"040":[{"a":"MH-Mu","ind2":" ","ind1":" "}],"245":[{"c":"von Johann Sebastian Bach ; herausgegeben und der Gesellschaft zur BefÃ¶rderung der
+ Tonkunst in Niederland zur Feier ihres 25 jÃ¤hrigen Bestehens zugeeignet von A. G. Ritter.","a":"Sinfonie fÃ¼r 2 Violinen, Viola, Bass, 2 Oboen, Fagott und Orgel","ind2":"0","ind1":"1"}],"710":[{"a":"Gesellschaf
+t zur BefÃ¶rderung der Tonkunst in Niederland","ind2":" ","ind1":"2"}],"100":[{"d":"1685-1750","e":"creator","a":"Bach, Johann Sebastian","ind2":" ","ind1":"1"}]},"original":"01149ncm  2200253uu 45000010010000000
+03000700010005001700017008004100034040001000075245025100085240004800336100004700384700004000431710006300471260003600534300003400570650003900604650002300643440005900666856005100725852001500776852002300791856008100
+814\u001E001400145\u001EHOLLIS\u001E20091117113726.0\u001E880216s        gw ||||| ||||||||||||||||\u001E  \u001FaMH-Mu\u001E10\u001FaSinfonie fÃ¼r 2 Violinen, Viola, Bass, 2 Oboen, Fagott und Orgel\u001Fcvon Joha
+nn Sebastian Bach ; herausgegeben und der Gesellschaft zur BefÃ¶rderung der Tonkunst in Niederland zur Feier ihres 25 jÃ¤hrigen Bestehens zugeeignet von A. G. Ritter.\u001E10\u001FaGott soll allein mein Herze hab
+en\u001FpSinfonia\u001E1 \u001FaBach, Johann Sebastian\u001Fd1685-1750\u001Fecreator\u001E1 \u001FaRitter, August Gottfried\u001Fd1811-1885\u001E2 \u001FaGesellschaft zur BefÃ¶rderung der Tonkunst in Niederland\u
+001E  \u001FaMagdeburg\u001FbHeinrichshofen\u001Fc1854\u001E  \u001Fa1 score (15 p.) ; 25 x 33 cm.\u001E1 \u001FaCantatas, Sacred\u001FxExcerpts\u001FxScores\u001E1 \u001FaInstrumental music\u001E  \u001FaLDI 10:
+ Digital scores from the Loeb Music Library III\u001E  \u001Fuhttp://nrs.harvard.edu/urn-3:fhcl.loeb:3274489\u001E  \u001FaLoeb Music\u001E  \u001FaNetworked Resource\u001E  \u001Fuhttp://vc.lib.harvard.edu/vc/de
+liver/~scores/001400145\u001F3Bibliographic record\u001E\u001D","sha1":"e91376703b0b58ac280c9a971b787ebaf868c25e","content_type":"application/marc","meta":{"srcsha1":"089c08b71d96982c018ad5511d4e1f321ba8a8a0","pt
+ag":"10010100","sid":["010","MTC"],"src":"/var/finc/data/extracted/010/current.mrc","kind":"title"}}
