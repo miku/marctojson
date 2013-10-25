@@ -76,10 +76,6 @@ public class Main {
 				.withLongOpt("help").create("h"));
 
 		options.addOption(OptionBuilder
-				.withDescription("show processing speed")
-				.withLongOpt("verbose").create("v"));
-
-		options.addOption(OptionBuilder
 				.hasArg()
 				.withArgName("FILE")
 				.withDescription(
@@ -197,12 +193,13 @@ public class Main {
 		String inputEncoding = cmd.getOptionValue("f",
 				appProperties.getProperty("app.input.encoding"));
 
-		// convert
-		Converter converter = new Converter();
-		long counter = converter.convert(cmd.getOptionValue("input"),
-				inputEncoding, outputFilename, outputEncoding, metadata);
+		if (cmd.hasOption("i")) {
+			// convert
+			Converter converter = new Converter();
+			long counter = converter.convert(cmd.getOptionValue("input"),
+					inputEncoding, outputFilename, outputEncoding, metadata);
 
-		logger.info("converted " + counter + " records");
-
+			logger.info("converted " + counter + " records");
+		}
 	}
 }
