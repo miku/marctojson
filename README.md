@@ -36,6 +36,19 @@ Packaging will create a single standalone executable under `target/marctojson`.
 Usage example
 -------------
 
+One line - containing a JSON object - is emitted per MARC record:
+
+    $ target/marctojson -i src/test/resources/423_records.mrc | wc -l
+    423
+
+
+Pass meta information to the document with `--metadata`:
+
+    $ target/marctojson -m hello=world -m date=`date +"%Y-%m-%d"` -i src/test/resources/vanilla.mrc
+    {"content":{"300":[{"c":"30x21  ...
+    ... "meta":{"hello":"world","date":"2013-10-25"}}
+
+
 Some fields are abridged for readablity. Using [json_pp](http://search.cpan.org/~makamaka/JSON-PP-2.27103/bin/json_pp).
 
     $ target/marctojson -i src/test/resources/vanilla.mrc|json_pp
