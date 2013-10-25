@@ -96,11 +96,6 @@ public class Main {
 				.withDescription("show available encodings")
 				.withLongOpt("list-encodings").create("e"));
 
-		options.addOption(OptionBuilder
-				.withDescription(
-						"convert an input file directly to JSON with Marc4J facilities")
-				.withLongOpt("with-marc4j").create());
-
 		final CommandLineParser parser = new PosixParser();
 		CommandLine cmd = null;
 
@@ -194,19 +189,20 @@ public class Main {
 					System.exit(1);
 				}
 			}
+
+			String outputFilename = cmd.getOptionValue("o");
+			String outputEncoding = cmd.getOptionValue("t",
+					appProperties.getProperty("app.output.encoding"));
+			String inputEncoding = cmd.getOptionValue("f",
+					appProperties.getProperty("app.input.encoding"));
+
+			// convert
+			Converter converter = new Converter();
+			long counter = converter.convert(cmd.getOptionValue("input"),
+					inputEncoding, outputFilename, outputEncoding, metadata);
+
+			logger.info("converted " + counter + " records");
+
 		}
-
-		String outputFilename = cmd.getOptionValue("o");
-		String outputEncoding = cmd.getOptionValue("t",
-				appProperties.getProperty("app.output.encoding"));
-		String inputEncoding = cmd.getOptionValue("f",
-				appProperties.getProperty("app.input.encoding"));
-
-		// convert
-		Converter converter = new Converter();
-		long counter = converter.convert(cmd.getOptionValue("input"),
-				inputEncoding, outputFilename, outputEncoding, metadata);
-
-		logger.info("converted " + counter + " records");
 	}
 }

@@ -92,6 +92,53 @@
 					</programs>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.6</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<configuration>
+							<target>
+								<taskdef resource="net/sf/antcontrib/antcontrib.properties"
+									classpathref="maven.plugin.classpath" />
+								<if>
+									<available
+										file="${project.build.directory}/${project.build.finalName}.jar"
+										type="file" />
+									<then>
+										<delete file="${project.build.directory}/${project.artifactId}"
+											failonerror="false" />
+										<echo file="${project.build.directory}/${project.artifactId}">#!/bin/sh${line.separator}exec java -Xmx1024m -Xms1024m -jar $0 "$@"${line.separator}</echo>
+										<concat destfile="${project.build.directory}/${project.artifactId}"
+											append="true" binary="true">
+											<filelist dir="${project.build.directory}" files="${project.build.finalName}.jar" />
+										</concat>
+										<chmod file="${project.build.directory}/${project.artifactId}"
+											perm="755" />
+									</then>
+									<else>
+										<fail message="could not create superfat-script" />
+									</else>
+								</if>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>ant-contrib</groupId>
+						<artifactId>ant-contrib</artifactId>
+						<version>20020829</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+
 		</plugins>
 	</build>
 
