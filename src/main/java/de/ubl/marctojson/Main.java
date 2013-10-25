@@ -189,20 +189,20 @@ public class Main {
 					System.exit(1);
 				}
 			}
-
-			String outputFilename = cmd.getOptionValue("o");
-			String outputEncoding = cmd.getOptionValue("t",
-					appProperties.getProperty("app.output.encoding"));
-			String inputEncoding = cmd.getOptionValue("f",
-					appProperties.getProperty("app.input.encoding"));
-
-			// convert
-			Converter converter = new Converter();
-			long counter = converter.convert(cmd.getOptionValue("input"),
-					inputEncoding, outputFilename, outputEncoding, metadata);
-
-			logger.info("converted " + counter + " records");
-
 		}
+
+		String outputFilename = cmd.getOptionValue("o");
+		String outputEncoding = cmd.getOptionValue("t",
+				appProperties.getProperty("app.output.encoding"));
+		String inputEncoding = cmd.getOptionValue("f",
+				appProperties.getProperty("app.input.encoding"));
+
+		// convert
+		Converter converter = new Converter();
+		long counter = converter.convert(cmd.getOptionValue("input"),
+				inputEncoding, outputFilename, outputEncoding, metadata);
+
+		logger.info("converted " + counter + " records");
+
 	}
 }
