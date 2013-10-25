@@ -26,7 +26,7 @@ Converts MARC to JSON.
 Building
 --------
 
-    $ git clone ...
+    $ git clone git@github.com:miku/marctojson.git
     $ cd marctojson
     $ mvn package
 
