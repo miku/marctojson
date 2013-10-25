@@ -36,6 +36,7 @@ Packaging will create a single standalone executable under `target/marctojson`.
 Usage example
 -------------
 
+
 One line - containing a JSON object - is emitted per MARC record:
 
     $ target/marctojson -i src/test/resources/423_records.mrc | wc -l
@@ -209,3 +210,8 @@ Some fields are abridged for readablity. Using [json_pp](http://search.cpan.org/
     }
 
 
+Conversion speed
+----------------
+
+Converting 5457095 records (1.3Gb) takes about 30 minutes,
+so around 3000 records per second.
