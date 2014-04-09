@@ -109,14 +109,14 @@
 										file="${project.build.directory}/${project.build.finalName}.jar"
 										type="file" />
 									<then>
-										<delete file="${project.build.directory}/${project.artifactId}"
+										<delete file="${project.build.directory}/${project.artifactId}-${project.version}"
 											failonerror="false" />
-										<echo file="${project.build.directory}/${project.artifactId}">#!/bin/sh${line.separator}exec java -Xmx1024m -Xms1024m -jar $0 "$@"${line.separator}</echo>
-										<concat destfile="${project.build.directory}/${project.artifactId}"
+										<echo file="${project.build.directory}/${project.artifactId}-${project.version}">#!/bin/sh${line.separator}exec java -Xmx1024m -Xms1024m -jar $0 "$@"${line.separator}</echo>
+										<concat destfile="${project.build.directory}/${project.artifactId}-${project.version}"
 											append="true" binary="true">
 											<filelist dir="${project.build.directory}" files="${project.build.finalName}.jar" />
 										</concat>
-										<chmod file="${project.build.directory}/${project.artifactId}"
+										<chmod file="${project.build.directory}/${project.artifactId}-${project.version}"
 											perm="755" />
 									</then>
 									<else>
