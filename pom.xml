@@ -16,7 +16,7 @@
 
 	<groupId>de.unileipzig.ub</groupId>
 	<artifactId>marctojson</artifactId>
-	<version>1.2</version>
+	<version>1.2.1</version>
 	<packaging>jar</packaging>
 
 	<name>marctojson</name>
