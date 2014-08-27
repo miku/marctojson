@@ -3,7 +3,8 @@ marctojson
 
 ----
 
-Deprecated: Please take a look at the [marctools](https://github.com/ubleipzig/marctools) project for a much faster converter.
+This converter is deprecated.
+Please take a look at the [marctojson](https://github.com/ubleipzig/marctools#marctojson) tool from the [marctools](https://github.com/ubleipzig/marctools) project for a much faster converter.
 
 ----
 
