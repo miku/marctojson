@@ -1,6 +1,12 @@
 marctojson
 ==========
 
+----
+
+Deprecated: Please take a look at the [marctools](https://github.com/ubleipzig/marctools) project for a much faster converter.
+
+----
+
 Converts MARC to JSON.
 
     $ marctojson -h
